@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+    <!-- Layout principal -->
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#f2f2f2">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentTop="true"
+                android:background="@color/toolbar_background">
+            <TextView
+                    android:id="@+id/cardioHealthKitText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CardioHealth Kit"
+                    android:textSize="21sp"
+                    android:textColor="#010440"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="bold"
+                    android:padding="16dp"
+                    android:gravity="center"/>
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- Fragment com o conteúdo principal.
+             Note o uso de layout_above para evitar que o rodapé o sobreponha -->
+        <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragment_container"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@id/toolbar"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/transparent"
+                android:keepScreenOn="true"
+                app:defaultNavHost="true"
+                app:navGraph="@navigation/nav_graph"/>
+
+        <!-- Caso utilize também o BottomNavigationView, posicione-o conforme necessário -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbar"
+                app:itemIconTint="@color/red"
+                app:itemTextColor="@color/red"
+                app:menu="@menu/menu_bottom_nav"/>
+    </RelativeLayout>
+
+    <!-- Rodapé (footer) ancorado na parte inferior -->
+    <LinearLayout
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:background="#c13541"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <!-- Botão SOS -->
+        <ImageView
+                android:id="@+id/btnSOS"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/sos"
+                android:contentDescription="SOS"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Histórico -->
+        <ImageView
+                android:id="@+id/btnHistorico"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/clock"
+                android:contentDescription="Histórico"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Home -->
+        <ImageView
+                android:id="@+id/btnHome"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/home"
+                android:contentDescription="Home"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Informações -->
+        <ImageView
+                android:id="@+id/btnInfo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/info"
+                android:contentDescription="Informações"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Usuário -->
+        <ImageView
+                android:id="@+id/btnUser"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/user"
+                android:contentDescription="Usuário"
+                app:tint="#ffffff"/>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

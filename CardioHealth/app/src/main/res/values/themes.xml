@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema da aplicação -->
+    <style name="Theme.AppCompat.DayNight.DarkActionBar" parent="Theme.AppCompat.DayNight.DarkActionBar"
+           tools:ignore="ResourceCycle">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+    </style>
+    <style name="CustomDatePickerStyle" parent="Theme.AppCompat.Light">
+        <item name="android:spinnerItemStyle">@style/CustomSpinnerStyle</item>
+        <item name="android:divider">@android:color/black</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- Estilo para os itens do spinner -->
+    <style name="CustomSpinnerStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="Theme.CardioHealth" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/red</item>
+        <item name="colorAccent">@color/red</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

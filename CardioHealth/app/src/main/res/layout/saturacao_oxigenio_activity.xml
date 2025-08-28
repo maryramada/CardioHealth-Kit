@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="#f0eff1"
+                                                   tools:context=".Controller.SaturacaoOxActivity">
+
+    <!-- Título -->
+    <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saturação de Oxigénio"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textColor="#c13541"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChart"
+            android:layout_width="0dp"
+            android:layout_height="480dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintTop_toBottomOf="@id/titleText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/bottomNav"/>
+
+    <!-- Barra de progresso centralizada -->
+    <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Bottom navigation -->
+    <LinearLayout
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#c13541"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+                android:id="@+id/btnSOS"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/sos"
+                android:contentDescription="SOS"
+                app:tint="#ffffff" />
+
+        <ImageView
+                android:id="@+id/btnHistorico"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/clock"
+                android:contentDescription="Histórico"
+                app:tint="#ffffff" />
+
+        <ImageView
+                android:id="@+id/btnHome"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/home"
+                android:contentDescription="Home"
+                app:tint="#ffffff" />
+
+        <ImageView
+                android:id="@+id/btnInfo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/info"
+                android:contentDescription="Informações"
+                app:tint="#ffffff" />
+
+        <ImageView
+                android:id="@+id/btnUser"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/user"
+                android:contentDescription="Usuário"
+                app:tint="#ffffff" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

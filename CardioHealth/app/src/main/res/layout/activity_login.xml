@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <!-- Imagem de Fundo -->
+
+    <!-- Título de Login -->
+    <ImageView
+            android:id="@+id/bg_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:scaleType="centerCrop"/>
+    <TextView
+            android:id="@+id/loginTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#ab0102"
+            android:textSize="57sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:textStyle="bold" />
+
+    <!-- Texto acima do Campo de Email -->
+    <TextView
+            android:id="@+id/emailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginTitle"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="80dp"
+            android:text="Email"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    <!-- Campo de Email -->
+    <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/emailLabel"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Digite o seu email"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:background="@drawable/text_background"
+            android:padding="10dp" />
+
+    <!-- Texto acima do Campo de Senha -->
+    <TextView
+            android:id="@+id/passwordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailEditText"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="80dp"
+            android:text="Password"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    <!-- Campo de Senha -->
+    <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/passwordLabel"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Digite a sua password"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:background="@drawable/text_background"
+            android:padding="10dp"
+            android:inputType="textPassword" />
+
+    <!-- Botão de Login -->
+    <Button
+            android:id="@+id/loginButton"
+            android:background="#000240"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:text="Entrar"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_below="@id/passwordEditText"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"
+            android:elevation="5dp" />
+
+
+    <!-- Botão para Criar Conta -->
+    <Button
+            android:id="@+id/createAccountButton"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:text="Criar Conta"
+            android:textSize="18sp"
+            android:textColor="#ab0102"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            android:layout_below="@id/loginButton"
+            android:layout_marginTop="7dp"
+            android:layout_centerHorizontal="true"
+            android:elevation="0dp" />
+
+</RelativeLayout>

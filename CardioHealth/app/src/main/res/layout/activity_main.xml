@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity" tools:ignore="ExtraText">
+
+    <!-- Background Image -->
+    <ImageView
+            android:id="@+id/bg_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/fundo"
+            android:scaleType="centerCrop" />
+
+    <!-- Title -->
+    <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ea3125"
+            android:textSize="57sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:textStyle="bold" />
+
+    <!-- Subtitle -->
+    <TextView
+            android:id="@+id/subtitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="22sp"
+            android:layout_below="@id/titleText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"/>
+
+    <!-- Start Button -->
+    <Button
+            android:id="@+id/startButton"
+            android:background="#000240"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:text="Login"
+            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"
+            android:layout_below="@id/subtitleText"
+            android:elevation="5dp" />
+
+    <!-- SOS Button -->
+    <Button
+            android:id="@+id/sosButton"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:text="SOS"
+            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:background="#a50200"
+            android:layout_below="@id/startButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:elevation="5dp" />
+</RelativeLayout>

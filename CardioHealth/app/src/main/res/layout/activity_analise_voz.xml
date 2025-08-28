@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="#f2f2f2">
+
+    <!-- Título -->
+    <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Análise Vocal"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_red"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp" />
+
+    <!-- Subtítulo / Aviso -->
+    <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Para uma análise mais eficaz, certifique-se que está num local com pouco ruído."
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:textAlignment="center"
+            android:layout_below="@id/tvTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp" />
+
+    <TextView
+            android:id="@+id/tvSecondSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clique no ícone do microfone abaixo para iniciar a análise!"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#666666"
+            android:textAlignment="center"
+            android:layout_below="@id/tvTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="105dp" />
+
+    <ImageButton
+            android:id="@+id/btnStartAnalysis"
+            android:layout_width="88dp"
+            android:layout_height="83dp"
+            android:src="@drawable/ic_microfone"
+            android:background="@drawable/botao_circular"
+            android:layout_marginTop="220dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="Iniciar Análise"
+            android:scaleType="fitCenter"/>
+
+    <!-- Barra inferior com 5 botões -->
+    <LinearLayout
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="#c13541"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp">
+
+
+    <!-- Botão SOS -->
+        <ImageView
+                android:id="@+id/btnSOS"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/sos"
+                android:contentDescription="SOS"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Histórico (Relógio) -->
+        <ImageView
+                android:id="@+id/btnHistorico"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/clock"
+                android:contentDescription="Histórico"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Home -->
+        <ImageView
+                android:id="@+id/btnHome"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/home"
+                android:contentDescription="Home"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Informações (i) -->
+        <ImageView
+                android:id="@+id/btnInfo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/info"
+                android:contentDescription="Informações"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Usuário (dados pessoais) -->
+        <ImageView
+                android:id="@+id/btnUser"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/user"
+                android:contentDescription="Usuário"
+                app:tint="#ffffff"/>
+    </LinearLayout>
+
+</RelativeLayout>

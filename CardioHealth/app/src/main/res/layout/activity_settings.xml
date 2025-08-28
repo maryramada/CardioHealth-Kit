@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground">
+
+    <!-- Área de conteúdo rolável -->
+    <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomNav">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+            <!-- Título da página -->
+            <TextView
+                    android:id="@+id/tvTitleSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Definições"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginStart="25dp"/>
+
+            <!-- Container dos controles (sem fundo extra, apenas os controles terão cores de destaque) -->
+            <LinearLayout
+                    android:id="@+id/configContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp">
+
+                <!-- Seção para o IP do Web Service -->
+                <TextView
+                        android:id="@+id/tvIP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Web Service IP Address"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:layout_marginTop="10dp"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                    <!-- NumberPickers com fundo (através do atributo backgroundTint) -->
+                    <NumberPicker
+                            android:id="@+id/np1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"/>
+                    <TextView
+                            android:text="."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:layout_gravity="center"
+                            android:textSize="18sp"/>
+                    <NumberPicker
+                            android:id="@+id/np2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"/>
+                    <TextView
+                            android:text="."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:layout_gravity="center"
+                            android:textSize="18sp"/>
+                    <NumberPicker
+                            android:id="@+id/np3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"/>
+                    <TextView
+                            android:text="."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:layout_gravity="center"
+                            android:textSize="18sp"/>
+                    <NumberPicker
+                            android:id="@+id/np4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"/>
+                </LinearLayout>
+
+                <!-- Seção para o Porto do Web Service -->
+                <TextView
+                        android:id="@+id/tvPort"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Web Service Port Address"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:layout_marginTop="20dp"/>
+                <EditText
+                        android:id="@+id/etNumPort"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text="0000"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/colorPrimary"/>
+
+                <!-- Botão para definir as configurações -->
+                <Button
+                        android:id="@+id/button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Set"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@color/colorWhite"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Rodapé com 5 botões (INALTERADO) -->
+    <LinearLayout
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <ImageView
+                android:id="@+id/btnSOS"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/sos"
+                android:contentDescription="SOS"
+                app:tint="@color/colorWhite"/>
+
+        <ImageView
+                android:id="@+id/btnHistorico"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/clock"
+                android:contentDescription="Histórico"
+                app:tint="@color/colorWhite"/>
+
+        <ImageView
+                android:id="@+id/btnHome"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/home"
+                android:contentDescription="Home"
+                app:tint="@color/colorWhite"/>
+
+        <ImageView
+                android:id="@+id/btnInfo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/info"
+                android:contentDescription="Informações"
+                app:tint="@color/colorWhite"/>
+
+        <ImageView
+                android:id="@+id/btnUser"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/user"
+                android:contentDescription="Usuário"
+                app:tint="@color/colorWhite"/>
+    </LinearLayout>
+
+</RelativeLayout>

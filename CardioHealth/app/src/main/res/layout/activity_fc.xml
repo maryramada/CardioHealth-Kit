@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0eff1">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomNav">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:gravity="center_horizontal">
+
+            <!-- Título: Frequência Cardíaca -->
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Frequência cardíaca"
+                    android:textSize="32sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="16dp"/>
+
+            <!-- Valor da Frequência Cardíaca -->
+            <TextView
+                    android:id="@+id/fcValueText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Carregando..."
+                    android:textSize="45sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="18dp"/>
+
+            <!-- Status -->
+            <TextView
+                    android:id="@+id/statusText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estado: Carregando"
+                    android:textSize="29sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp" />
+
+            <!-- Container "card" para a seção informativa -->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/card_bg"
+                    android:layout_marginTop="27dp"
+                    android:elevation="4dp"
+                    android:padding="16dp">
+
+                <!-- Título da seção -->
+                <TextView
+                        android:id="@+id/infoTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Acerca da frequência cardíaca"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="#333333"
+                        android:layout_marginBottom="8dp" />
+
+                <!-- Texto informativo com quebras de parágrafo -->
+                <TextView
+                        android:id="@+id/infoText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A frequência cardíaca corresponde ao número de batimentos do coração por minuto (bpm) e constitui um dos indicadores mais relevantes da saúde cardiovascular. Esta pode variar ao longo do dia, dependendo de diversos fatores, como a prática de atividades físicas, as emoções e até a posição do corpo.\n\nEm repouso, uma frequência cardíaca normal para um adulto saudável situa-se entre os 60 e os 100 bpm. Durante a realização de exercícios físicos, a frequência cardíaca tende a aumentar, proporcionando maior oxigénio e nutrientes aos músculos em atividade.\n\nO monitoramento da frequência cardíaca é útil para avaliar o estado de saúde do coração, permitindo a deteção precoce de possíveis problemas. A prática regular de exercício físico pode melhorar a eficiência cardíaca, conduzindo a uma diminuição natural da frequência cardíaca em repouso ao longo do tempo."
+                        android:textSize="16sp"
+                        android:textColor="#333333"
+                        android:lineSpacingExtra="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!-- Barra inferior com 5 botões -->
+    <LinearLayout
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="#c13541"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <!-- Botão SOS -->
+        <ImageView
+                android:id="@+id/btnSOS"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/sos"
+                android:contentDescription="SOS"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Histórico (Relógio) -->
+        <ImageView
+                android:id="@+id/btnHistorico"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/clock"
+                android:contentDescription="Histórico"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Home -->
+        <ImageView
+                android:id="@+id/btnHome"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/home"
+                android:contentDescription="Home"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Informações (i) -->
+        <ImageView
+                android:id="@+id/btnInfo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/info"
+                android:contentDescription="Informações"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Usuário (dados pessoais) -->
+        <ImageView
+                android:id="@+id/btnUser"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/user"
+                android:contentDescription="Usuário"
+                app:tint="#ffffff"/>
+    </LinearLayout>
+</RelativeLayout>

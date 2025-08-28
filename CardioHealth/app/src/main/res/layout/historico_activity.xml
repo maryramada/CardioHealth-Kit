@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0eff1">
+
+    <!-- Título "CardioHealth" -->
+    <TextView
+            android:id="@+id/headerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CardioHealth"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#c13541"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="50dp" />
+
+    <!-- Subtítulo "Histórico" -->
+    <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Histórico"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#c13541"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/headerTitle"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp" />
+
+    <!-- Botão Frequência Cardíaca -->
+    <Button
+            android:id="@+id/btnFrequenciaCardiaca"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/subtitle"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/button_background"
+            android:text="Frequência Cardíaca"
+            android:textSize="20sp"
+            android:textColor="#c13541" />
+
+    <!-- Botão SpO₂ -->
+    <Button
+            android:id="@+id/btnSpO2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/btnFrequenciaCardiaca"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/button_background"
+            android:text="SpO₂"
+            android:textSize="20sp"
+            android:textColor="#c13541" />
+
+    <!-- Botão Alertas -->
+    <Button
+            android:id="@+id/btnAlertas"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/btnSpO2"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/button_background"
+            android:text="Alertas"
+            android:textSize="20sp"
+            android:textColor="#c13541" />
+
+    <!-- Barra inferior com 5 botões -->
+    <LinearLayout
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="#c13541"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <!-- Botão SOS -->
+        <ImageView
+                android:id="@+id/btnSOS"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/sos"
+                android:contentDescription="SOS"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Histórico (Relógio) -->
+        <ImageView
+                android:id="@+id/btnHistorico"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/clock"
+                android:contentDescription="Histórico"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Home -->
+        <ImageView
+                android:id="@+id/btnHome"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/home"
+                android:contentDescription="Home"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Informações (i) -->
+        <ImageView
+                android:id="@+id/btnInfo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/info"
+                android:contentDescription="Informações"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Usuário (dados pessoais) -->
+        <ImageView
+                android:id="@+id/btnUser"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/user"
+                android:contentDescription="Usuário"
+                app:tint="#ffffff"/>
+    </LinearLayout>
+</RelativeLayout>

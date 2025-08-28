@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+    <TextView
+            android:id="@+id/tvTipoAlerta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#c13541" />
+
+    <TextView
+            android:id="@+id/tvDescricaoAlerta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descrição"
+            android:textSize="16sp"
+            android:textColor="#000000" />
+
+    <TextView
+            android:id="@+id/tvValorAlerta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor"
+            android:textSize="16sp"
+            android:textColor="#666666" />
+
+    <TextView
+            android:id="@+id/tvDataHoraAlerta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data e Hora"
+            android:textSize="14sp"
+            android:textColor="#666666" />
+</LinearLayout>

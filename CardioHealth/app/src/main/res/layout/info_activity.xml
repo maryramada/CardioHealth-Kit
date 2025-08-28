@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="#f0eff1">
+
+    <!-- Conteúdo principal em um ScrollView -->
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomNav"
+            android:padding="16dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <!-- Título da página -->
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Informações sobre Ataques Cardíacos e AVCs"
+                    android:textSize="26sp"
+                    android:textColor="#c13541"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"/>
+
+            <!-- Secção: Ataques Cardíacos -->
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="O que é um Ataque Cardíaco?"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="8dp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Um ataque cardíaco ocorre quando há uma obstrução do fluxo sanguíneo para o coração, geralmente devido a um coágulo ou acúmulo de placas nas artérias.\nPode causar danos irreversíveis ao músculo cardíaco."
+                    android:textSize="20sp"
+                    android:textColor="#555555"
+                    android:layout_marginBottom="16dp" />
+
+            <!-- Secção: AVC -->
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="O que é um AVC?"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="8dp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="O Acidente Vascular Cerebral (AVC) acontece quando há uma interrupção do fluxo sanguíneo para o cérebro, quer seja por um bloqueio (AVC isquêmico) ou por um rompimento de um vaso sanguíneo (AVC hemorrágico).\nPode afetar funções motoras, fala e cognição."
+                    android:textSize="20sp"
+                    android:textColor="#555555"
+                    android:layout_marginBottom="16dp" />
+
+            <!-- Secção: Sintomas -->
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sintomas de um Ataque Cardíaco e de um AVC"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="8dp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Ataque Cardíaco: dor no peito, falta de ar, suor frio, náuseas e tonturas.\n\n• AVC: fraqueza ou dormência em um lado do corpo, dificuldade para falar, perda de equilíbrio e visão turva."
+                    android:textSize="20sp"
+                    android:textColor="#555555"
+                    android:layout_marginBottom="16dp" />
+
+            <!-- Secção: Medidas de Prevenção -->
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Como Prevenir?"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="8dp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Controlo da pressão arterial e dos níveis de colesterol.\n• Mantenha uma alimentação equilibrada e pratique exercícios.\n• Evite o tabagismo e o consumo excessivo de álcool.\n• Controlo do estresse e durma bem.\n• Faça exames médicos regularmente."
+                    android:textSize="20sp"
+                    android:textColor="#555555"
+                    android:layout_marginBottom="16dp" />
+
+            <!-- Secção: Questões Frequentes -->
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Questões Frequentes"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="8dp" />
+
+            <!-- Questão 1 -->
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. O que fazer ao identificar sintomas de um ataque cardíaco ou AVC?"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="4dp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ligue imediatamente para os serviços de emergência e tente manter a calma. Para um ataque cardíaco, evite esforços físicos. Para um AVC, mantenha a pessoa deitada e evite oferecer líquidos ou alimentos."
+                    android:textSize="20sp"
+                    android:textColor="#555555"
+                    android:layout_marginBottom="16dp" />
+
+            <!-- Questão 2 -->
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2. Quem tem maior risco de sofrer um ataque cardíaco ou AVC?"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="4dp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pessoas com histórico familiar, hipertensão, colesterol alto, diabetes, obesidade, tabagismo e vida sedentária estão em maior risco."
+                    android:textSize="20sp"
+                    android:textColor="#555555"
+                    android:layout_marginBottom="16dp" />
+
+            <!-- Questão 3 -->
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3. Qual é a importância da reabilitação após um AVC ou ataque cardíaco?"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="4dp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A reabilitação após um AVC ou ataque cardíaco é essencial para ajudar na recuperação física e mental. Esta auxilia na restauração da mobilidade, no controlo dos fatores de risco e na melhoria da qualidade de vida, além de oferecer apoio emocional para lidar com as mudanças e desafios durante a recuperação."
+                    android:textSize="20sp"
+                    android:textColor="#555555"
+                    android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Barra inferior com ícones -->
+    <LinearLayout
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="#c13541"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <!-- Botão SOS -->
+        <ImageView
+                android:id="@+id/btnSOS"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/sos"
+                android:contentDescription="SOS"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Histórico -->
+        <ImageView
+                android:id="@+id/btnHistorico"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/clock"
+                android:contentDescription="Histórico"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Home -->
+        <ImageView
+                android:id="@+id/btnHome"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/home"
+                android:contentDescription="Home"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Informações -->
+        <ImageView
+                android:id="@+id/btnInfo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/info"
+                android:contentDescription="Informações"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Usuário -->
+        <ImageView
+                android:id="@+id/btnUser"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/user"
+                android:contentDescription="Usuário"
+                app:tint="#ffffff"/>
+    </LinearLayout>
+</RelativeLayout>

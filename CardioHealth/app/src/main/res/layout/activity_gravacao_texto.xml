@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="#f2f2f2">
+>
+
+    <!-- Caixa de texto com o texto a ser lido -->
+    <ImageButton
+            android:id="@+id/btnBackArrow"
+            android:layout_width="98dp"
+            android:layout_height="88dp"
+            android:src="@drawable/ic_back_arrow"
+            android:contentDescription="Voltar"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="550dp"
+            android:layout_marginLeft="9dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitStart"/>
+
+    <TextView
+            android:id="@+id/tvTextoLido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Texto a ser lido"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textAlignment="center"
+            android:background="@drawable/rounded_background"/>
+
+    <!-- Botão para iniciar/parar a gravação -->
+    <Button
+            android:id="@+id/btnIniciarPararGravacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iniciar Gravação"
+            android:layout_below="@id/tvTextoLido"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" />
+
+    <!-- Barra inferior com 5 botões -->
+    <LinearLayout
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="#c13541"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <!-- Botão SOS -->
+        <ImageView
+                android:id="@+id/btnSOS"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/sos"
+                android:contentDescription="SOS"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Histórico (Relógio) -->
+        <ImageView
+                android:id="@+id/btnHistorico"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/clock"
+                android:contentDescription="Histórico"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Home -->
+        <ImageView
+                android:id="@+id/btnHome"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/home"
+                android:contentDescription="Home"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Informações (i) -->
+        <ImageView
+                android:id="@+id/btnInfo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/info"
+                android:contentDescription="Informações"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Usuário (dados pessoais) -->
+        <ImageView
+                android:id="@+id/btnUser"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/user"
+                android:contentDescription="Usuário"
+                app:tint="#ffffff"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
+

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="#f0eff1">
+
+    <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voltar"
+            android:textColor="@android:color/black"
+            android:background="@android:color/transparent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="10dp"
+            android:layout_marginTop="10dp" />
+
+    <!-- ScrollView para permitir rolagem do conteúdo -->
+
+    <!-- Barra inferior com 5 botões -->
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomNav" android:layout_marginBottom="42dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <!-- Título: Dados Pessoais -->
+            <TextView
+                    android:id="@+id/headerTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dados Pessoais"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="#c13541"
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="center_horizontal"/>
+
+            <!-- Título do Nome -->
+            <TextView
+                    android:id="@+id/txtNome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nome"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="20dp"/>
+
+            <!-- Campo de texto para Nome -->
+            <EditText
+                    android:id="@+id/editNome"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Digite seu nome"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textSize="18sp"
+                    android:textColor="#000000"/>
+
+            <!-- Título da Password -->
+            <TextView
+                    android:id="@+id/txtPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="20dp"/>
+
+            <!-- Campo de texto para Password -->
+            <EditText
+                    android:id="@+id/editPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Digite sua password"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:inputType="textPassword"/>
+
+            <!-- Título do Nascimento -->
+            <TextView
+                    android:id="@+id/tvBirthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nascimento"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="20dp"/>
+
+
+            <DatePicker
+                    android:id="@+id/dpBirthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:datePickerMode="spinner"
+                    android:calendarViewShown="false"
+                    android:background="@android:color/transparent"
+                    android:theme="@style/CustomDatePickerStyle"/>
+
+            <TextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="20dp"/>
+
+            <!-- Campo de texto para Email -->
+            <EditText
+                    android:id="@+id/editEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Digite seu email"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:inputType="textEmailAddress"/>
+
+            <!-- Título do Telemóvel -->
+            <TextView
+                    android:id="@+id/txtTelemovel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Telemóvel"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="20dp"/>
+
+            <!-- Campo de texto para Telemovel -->
+            <EditText
+                    android:id="@+id/editTelemovel"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Digite seu telemóvel"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:inputType="phone"/>
+
+            <!-- Título do Contacto de Emergencia -->
+            <TextView
+                    android:id="@+id/txtContactoEmergencia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contacto Emergência"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="20dp"/>
+
+            <!-- Campo de texto para Contacto Emergencia -->
+            <EditText
+                    android:id="@+id/editContactoEmergencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Digite o seu contacto de Emergência"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:inputType="phone"/>
+
+            <!-- Botão de Salvar -->
+            <Button
+                    android:id="@+id/btnSalvar"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginEnd="80dp"
+                    android:background="@drawable/button_background"
+                    android:text="Salvar"
+                    android:textColor="#c13541"
+                    android:textSize="18sp"/>
+            <TextView
+                    android:id="@+id/btnTerminarSessao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terminar Sessão"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:visibility="gone"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="24dp" />
+
+            <TextView
+                    android:id="@+id/btnApagarConta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apagar Conta"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:visibility="gone"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_centerHorizontal="true" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="#c13541"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <!-- Botão SOS -->
+        <ImageView
+                android:id="@+id/btnSOS"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/sos"
+                android:contentDescription="SOS"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Histórico (Relógio) -->
+        <ImageView
+                android:id="@+id/btnHistorico"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/clock"
+                android:contentDescription="Histórico"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Home -->
+        <ImageView
+                android:id="@+id/btnHome"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/home"
+                android:contentDescription="Home"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Informações (i) -->
+        <ImageView
+                android:id="@+id/btnInfo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/info"
+                android:contentDescription="Informações"
+                app:tint="#ffffff"/>
+
+        <!-- Botão Usuário (dados pessoais) -->
+        <ImageView
+                android:id="@+id/btnUser"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/user"
+                android:contentDescription="Usuário"
+                app:tint="#ffffff"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
